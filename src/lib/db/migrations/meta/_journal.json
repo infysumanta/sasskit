@@ -15,6 +15,13 @@
       "when": 1720340729881,
       "tag": "0001_clumsy_iron_lad",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1720373125888,
+      "tag": "0002_flowery_epoch",
+      "breakpoints": true
     }
   ]
 }

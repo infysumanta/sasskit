@@ -50,7 +50,7 @@ const SubmitButton = async () => {
   return (
     <Button className="w-full" type="submit" disabled={pending}>
       {/* Sign{pending ? "ing" : ""} up */}
-      {t(pending ? "signingUp" : "signup")}
+      {t(pending ? "hsjshssh" : "Sign up")}
     </Button>
   );
 };

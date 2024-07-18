@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { pgTable, timestamp, text, boolean } from "drizzle-orm/pg-core";
 
-export const users = pgTable("user", {
+export const users = pgTable("users", {
   id: text("id").primaryKey().default("gen_random_uuid()"),
   email: text("email").notNull().unique(),
   hashedPassword: text("hashed_password").notNull(),
@@ -21,7 +21,7 @@ export const users = pgTable("user", {
   }),
 });
 
-export const sessions = pgTable("session", {
+export const sessions = pgTable("sessions", {
   id: text("id").primaryKey(),
   userId: text("user_id")
     .notNull()

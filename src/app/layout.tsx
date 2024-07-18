@@ -4,7 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { LocaleProvider } from "@/hooks/locale-provider";
 import { getLocale } from "@/i18/server";
-
+import ProgressBar from "@/components/ProgressBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -28,6 +28,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <ProgressBar />
             {children}
           </ThemeProvider>
         </LocaleProvider>
